@@ -1,0 +1,44 @@
+<!-- 
+HTML contains elements.
+Ex: html, head, body, p, img etc.
+
+Each element consists of two tags - opening tag and closing tag.
+Ex: To represent a paragraph - opening tag: <p>, closing tag </p>
+
+Few elements are self closing meaning they don't have separate closing tag. 
+Ex: <img src="birds.png" />
+
+Each element can have multiple (supported) attributes - these provide additional info.
+Ex: <img src="nature.jpg" width="500" height="600">
+Here the src attribute is used to specify the path. width and height are used to specify dimensions.
+-->
+
+<html>
+  <!-- head element contains meta data about the webpage like title, favicon, files etc -->
+  <head>
+    <title>Web - Basics</title>
+    <!-- Internal CSS -->
+    <style>
+      h1{
+        color: blue;
+      }
+    </style>
+
+    <!-- External CSS and JS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- here "defer" attribute makes sure that javascript is executed after the page has finished parsing -->
+    <script src="script.js" defer></script>
+  </head>
+  <!-- body tag contains the actual data that is presented on the screen -->
+  <body>
+    <h1>Hello World</h1>
+    <!-- In-Line CSS -->
+    <button onclick="greet()" style="color:green;">Greet</button>
+    <!-- Internal JS -->
+    <script>
+      function greet(){
+        window.alert("Hey !")
+      }
+    </script>
+  </body>
+</html>
