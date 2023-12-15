@@ -1,0 +1,24 @@
+/* 
+CSS is used to style webpage by defining rules for elements.
+A CSS rule consists of a selector and a declaration block.
+In the declaration block, specify the properties as key-value pairs separated by semi-colon.
+Ex: 
+p {
+  color: blue;
+  text-align: center;
+  }
+  
+Box Model: The CSS box model is essentially a box that wraps around every HTML element. 
+It consists of: Content, Padding, Border and Margin (inner to outer direction).
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+*/
+
+p {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
