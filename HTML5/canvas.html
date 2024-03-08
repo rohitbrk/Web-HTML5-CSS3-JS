@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="600px" height="600px"></canvas>
+    <script>
+      const canvas = document.getElementById("canvas");
+      const context = canvas.getContext("2d");
+      function drawRectangle() {
+        context.fillStyle = "blue";
+        context.fillRect(100, 100, 100, 50);
+      }
+
+      function drawTriangle() {
+        context.beginPath();
+        context.moveTo(75, 50);
+        context.lineTo(100, 75);
+        context.lineTo(100, 25);
+        context.fill();
+      }
+
+      function drawCircle() {
+        context.beginPath();
+        context.arc(220, 220, 50, 0, Math.PI * 2, true);
+        context.stroke();
+      }
+      drawRectangle();
+      drawTriangle();
+      drawCircle();
+    </script>
+  </body>
+</html>
