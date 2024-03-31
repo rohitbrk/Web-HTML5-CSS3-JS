@@ -13,3 +13,9 @@ const fruits = ["apple", "mango", "watermelon", "orange"];
 const target = "mango"
 const find_fruit = fruits.find(fruit => fruit === target);
 console.log(find_fruit)
+
+// reduce -
+const nums3 = [1, 2, 3, 4, 5];
+const init = 0;
+const total = nums.reduce((acc, cur) => acc + cur, init);
+console.log(total);
