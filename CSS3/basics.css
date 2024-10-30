@@ -22,3 +22,12 @@ p {
   padding: 50px;
   margin: 20px;
 }
+
+/* pseudo class 
+A pseudo-class is used to define a special state of an element.
+for example when the user hovers on an element or focus an input etc
+*/
+
+p:hover {
+  color: #FF00FF
+}
