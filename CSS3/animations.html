@@ -1,3 +1,7 @@
+<!-- animations in css lets an element gradually change from one style to another. -->
+<!-- you can clearly specify  how the animation should look at 10%, 20%, .. and so on, -->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,11 +21,23 @@
       }
 
       @keyframes changeBgColorWidth {
-        from {
-          background-color: pink;
-          width: 50%;
+        0% {
+          background-color: red;
+          width: 100%;
         }
-        to {
+        25% {
+          background-color: yellow;
+          width: 100%;
+        }
+        50% {
+          background-color: blue;
+          width: 100%;
+        }
+        75% {
+          background-color: green;
+          width: 100%;
+        }
+        100% {
           background-color: red;
           width: 100%;
         }
