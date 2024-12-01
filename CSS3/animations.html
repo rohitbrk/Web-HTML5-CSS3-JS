@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        width: 100%;
+        background-color: aqua;
+      }
+      .inner {
+        width: 50%;
+        background-color: pink;
+        animation-name: changeBgColorWidth;
+        animation-duration: 2s;
+      }
+
+      @keyframes changeBgColorWidth {
+        from {
+          background-color: pink;
+          width: 50%;
+        }
+        to {
+          background-color: red;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+          molestias nihil commodi eligendi vitae quo ea dolores consequuntur
+          aperiam amet! Perspiciatis libero ratione quos veniam earum fugiat
+          reiciendis maxime! Odio.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
