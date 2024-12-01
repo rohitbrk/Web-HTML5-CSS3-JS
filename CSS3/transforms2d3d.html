@@ -1,0 +1,52 @@
+<!-- transforms lets you transform the seleted element in 2d or 3d -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .outer {
+        width: 100%;
+        background-color: aqua;
+      }
+      .inner1 {
+        width: 50%;
+        background-color: pink;
+      }
+
+      .inner2 {
+        width: 50%;
+        background-color: pink;
+        transition: transform 3s;
+        transform: rotate(20deg);
+      }
+
+      .inner2:hover {
+        width: 50%;
+        transform: rotateX(150deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner1">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+          molestias nihil commodi eligendi vitae quo ea dolores consequuntur
+          aperiam amet! Perspiciatis libero ratione quos veniam earum fugiat
+          reiciendis maxime! Odio.
+        </p>
+      </div>
+      <div class="inner2">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+          molestias nihil commodi eligendi vitae quo ea dolores consequuntur
+          aperiam amet! Perspiciatis libero ratione quos veniam earum fugiat
+          reiciendis maxime! Odio.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
